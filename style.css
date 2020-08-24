@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0.5vh 0.5vw;
+}
+
+input[type="number"] {
+    width: 90%;
+}
+
+html {
+    font-family: 'Unica One', cursive;
+    font-size: 16px;
+    text-align:center;
+}
+
+body {
+    background-color:#333;
+}
+
+header,label {
+    color:wheat;
+    padding: 5px;
+}
+
+.controls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.control-group:nth-of-type(1) {
+    background-color: red;
+}
+
+.control-group:nth-of-type(2) {
+    background-color: green;
+}
+
+.control-group:nth-of-type(3) {
+    background-color: blue;
+}
+
+.control-group:nth-of-type(4) {
+    background-color: wheat;
+}
+
+.control-group:nth-of-type(4) > label {
+    color: black;
+}
+
+.control-group:nth-of-type(5) {
+    background-color: black;
+}
+
+.control-group:nth-of-type(5) > label {
+    color: white;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.originalCanvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    margin: 2vh 5vw;
+}
+
+.filter-effect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    margin: 2vh 5vw;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6*((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}

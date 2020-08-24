@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic image processing</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Basic Image processing</h1>
+        </header>
+        <div class="canvas-container">
+            <div class="originalCanvas">
+                <div>ORIGINAL</div>
+                <div><canvas id="originalCanvas"></canvas></div>
+            </div>
+            <div class="filter-effect">
+                <div>FILTER EFFECT</div>
+                <div><canvas id="filterCanvas"></canvas></div>
+            </div>
+        </div>
+        <header>
+            <h2>
+                CONTROL PANEL
+            </h2>
+        </header>
+        <div class="controls-container">
+            <div class="control-group">
+                <label for="redChannel">RED : <span class="redChannel"></span></label>
+                <div class="controls">
+                    <input id="redChannel" type="range" min="-255" max="255">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="greenChannel">GREEN : <span class="greenChannel"></span></label>
+                <div class="controls">
+                    <input id="greenChannel" type="range" min="-255" max="255">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="blueChannel">BLUE : <span class="blueChannel"></span></label>
+                <div class="controls">
+                    <input id="blueChannel" type="range" min="-255" max="255">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="brightness">BRIGHTNESS : <span class="brightness"></span></label>
+                <div class="controls">
+                    <input id="brightness" type="range" min="-255" max="255">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="grayscale">GRAYSCALE</label>
+                <div class="controls">
+                    <input id="grayscale" type="checkbox" name="grayscale" id="grayscale">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
+<!--Image by <a href="https://pixabay.com/users/nicos_fotowelt-2354795/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5104382">Nico Grütter</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5104382">Pixabay</a>-->
